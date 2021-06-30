@@ -5,3 +5,5 @@ source/
 csv/
 .env
 example/
+tsv/
+*.tar.gz
