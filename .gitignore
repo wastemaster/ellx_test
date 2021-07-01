@@ -7,3 +7,5 @@ csv/
 example/
 tsv/
 *.tar.gz
+move/
+.clickhouse-client/

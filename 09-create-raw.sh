@@ -28,7 +28,7 @@ CREATE TABLE ellx_test.raw (
   ccbji_channel_lv2_code String,
   ccbji_channel_lv2 String,
   ccbji_channel_lv3_code String,
-  ccbji_channel_lv3 String,
+  ccbji_channel_lv3 FixedString(13),
   product_code String,
   product String,
   bapc String,
