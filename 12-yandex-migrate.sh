@@ -21,8 +21,8 @@ docker run -i --rm \
 CREATE TABLE db1.channels (
 id UUID,
 ccbji_channel_lv3_code UInt16,
-ccbji_channel_lv3 FixedString(13),
-conversion_master FixedString(7)
+ccbji_channel_lv3 String,
+conversion_master String
 ) Engine = MergeTree()
 ORDER BY
 id PRIMARY KEY id"
@@ -65,11 +65,11 @@ CREATE TABLE db1.division_channels (
   district_headquarters_code UInt16,
   district_headquarters String,
   ccbji_channel_lv3_code UInt16,
-  ccbji_channel_lv3 FixedString(13),
+  ccbji_channel_lv3 String,
   key String,
-  aggregate_region FixedString(20),
-  aggregate_division FixedString(20),
-  headquarter FixedString(20)
+  aggregate_region String,
+  aggregate_division String,
+  headquarter String
 ) Engine = MergeTree()
 ORDER BY
   id PRIMARY KEY id"
@@ -135,7 +135,7 @@ CREATE TABLE db1.raw (
   ccbji_channel_lv2_code String,
   ccbji_channel_lv2 String,
   ccbji_channel_lv3_code String,
-  ccbji_channel_lv3 FixedString(13),
+  ccbji_channel_lv3 String,
   product_code String,
   product String,
   bapc String,
